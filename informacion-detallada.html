@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#2a858f">
+
+    <title>Información Detallada - Estudio Bombay</title>
+    <link rel="icon" href="Imagenes/bombayBB.jpg">
+    <link rel="stylesheet" href="estilosPagina.css">
+
+    <!-- Fuentes de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <!-- Fuentes de font awesome, para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="Pagina.html" class="logo-container">
+                <img id="logo" 
+                    src="Imagenes/bombayBB.jpg" 
+                    alt="Logo de Estudio Bombay" 
+                    width="80" 
+                    height="80"
+                    title="Estudio Bombay">
+            </a>
+            <div class="navbar-info">
+                <a href="Pagina.html" style="color: inherit; text-decoration: none;">
+                    ← Volver a la página principal
+                </a>
+            </div>
+            <button class="menu-hamburguesa" id="menu-hamburguesa" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="offcanvas-menu" id="offcanvas-menu">
+                <div class="offcanvas-header">
+                    <img src="Imagenes/bombayBB.jpg" alt="Logo" width="50" height="50" style="border-radius:50%;">
+                    <button class="close-offcanvas" id="close-offcanvas" aria-label="Cerrar menú">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <ul class="offcanvas-list">
+                    <li><a href="Pagina.html"><i class="fas fa-home"></i> Página Principal</a></li>
+                    <li><a href="#tratamientos-faciales"><i class="fas fa-spa"></i> Tratamientos Faciales</a></li>
+                    <li><a href="#tratamientos-corporales"><i class="fas fa-heart"></i> Tratamientos Corporales</a></li>
+                    <li><a href="#cuidados-post"><i class="fas fa-leaf"></i> Cuidados Post-Tratamiento</a></li>
+                </ul>
+            </div>
+            <ul class="nav-list" id="nav-list">
+                <li class="linkInternos"><a href="Pagina.html"><i class="fas fa-home"></i> Página Principal</a></li>
+                <li class="linkInternos"><a href="#tratamientos-faciales"><i class="fas fa-spa"></i> Tratamientos Faciales</a></li>
+                <li class="linkInternos"><a href="#tratamientos-corporales"><i class="fas fa-heart"></i> Tratamientos Corporales</a></li>
+                <li class="linkInternos"><a href="#cuidados-post"><i class="fas fa-leaf"></i> Cuidados Post-Tratamiento</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="section-divider"></div>
+
+    <main>
+        <section id="inicio-detallado">
+            <h1>Información Detallada de Tratamientos</h1>
+            <p>En Estudio Bombay, cada tratamiento está diseñado para brindarte los mejores resultados. 
+            Conoce en detalle cada uno de nuestros procedimientos y los cuidados necesarios para maximizar sus beneficios.</p>
+            
+            <!-- Botón principal de reserva -->
+            <div class="reserva-principal">
+                <a href="https://wa.me/+56995127863" target="_blank" class="btn-reserva-principal">
+                    <i class="fab fa-whatsapp"></i>
+                    <span class="reserva-texto">
+                        <span class="reserva-titulo">¡Reserva tu cita ahora!</span>
+                        <span class="reserva-subtitulo">Consulta disponible 24/7</span>
+                    </span>
+                </a>
+            </div>
+        </section>
+
+        <section id="tratamientos-faciales">
+            <h2>Tratamientos Faciales Detallados</h2>
+            
+            <!-- Limpieza Facial con pasos detallados -->
+            <div class="tratamiento-moderno">
+                <div class="tratamiento-moderno-imagen">
+                    <img src="Imagenes/limpiezaFacial.jpg" alt="Limpieza Facial">
+                </div>
+                <div class="tratamiento-moderno-info">
+                    <div class="tratamiento-moderno-titulo">Limpieza Facial</div>
+                    <div class="tratamiento-moderno-meta">
+                        <span><i class="fa-regular fa-clock"></i> 60 min</span>
+                        <span><i class="fas fa-dollar-sign"></i> $15.000</span>
+                        <span class="badge-popular-detallado">Popular</span>
+                    </div>
+                    <ol class="tratamiento-pasos">
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">1</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-magnifying-glass"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Evaluación de tu piel:</b> Analizamos tu tipo de piel y necesidades específicas para personalizar el tratamiento.</span>
+                        </li>
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">2</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-soap"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Limpieza inicial:</b> Retiramos impurezas y maquillaje con productos suaves y adecuados para tu piel.</span>
+                        </li>
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">3</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-seedling"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Exfoliación:</b> Aplicamos un exfoliante suave para eliminar células muertas y dejar la piel lista para el siguiente paso.</span>
+                        </li>
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">4</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Extracción de impurezas:</b> Si es necesario, realizamos una extracción manual y cuidadosa de puntos negros y milium.</span>
+                        </li>
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">5</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-spa"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Mascarilla hidratante:</b> Aplicamos una mascarilla adaptada a tu tipo de piel para calmar, hidratar y revitalizar.</span>
+                        </li>
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">6</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-droplet"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Hidratación final:</b> Sellamos el tratamiento con crema hidratante y protector solar para proteger tu piel.</span>
+                        </li>
+                    </ol>
+                    <div class="tratamiento-moderno-frecuencia">
+                        <i class="fa-regular fa-calendar"></i> Se recomienda cada 3-4 semanas
+                    </div>
+                    <div class="tratamiento-moderno-sensacion">
+                        <b>¿Qué sentirás?</b> Tu piel se sentirá fresca, suave y luminosa. El procedimiento es relajante. ¡Saldrás renovada y protegida!
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rejuvenecimiento Facial con pasos detallados -->
+            <div class="tratamiento-moderno">
+                <div class="tratamiento-moderno-imagen">
+                    <img src="Imagenes/RejuvenecimietnoFacial.webp" alt="Rejuvenecimiento Facial">
+                </div>
+                <div class="tratamiento-moderno-info">
+                    <div class="tratamiento-moderno-titulo">Rejuvenecimiento Facial</div>
+                    <div class="tratamiento-moderno-meta">
+                        <span><i class="fa-regular fa-clock"></i> 75 min</span>
+                        <span><i class="fas fa-dollar-sign"></i> $25.000</span>
+                        <span class="badge-premium-detallado">Premium</span>
+                    </div>
+                    <ol class="tratamiento-pasos">
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">1</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-magnifying-glass"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Evaluación de signos de edad:</b> Analizamos líneas de expresión, arrugas y pérdida de firmeza para personalizar el tratamiento.</span>
+                        </li>
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">2</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-soap"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Limpieza profunda:</b> Preparamos la piel eliminando impurezas y células muertas para optimizar la absorción.</span>
+                        </li>
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">3</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-leaf"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Aplicación de sueros:</b> Utilizamos sueros con ingredientes activos como retinol, vitamina C y péptidos para estimular la regeneración.</span>
+                        </li>
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">4</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Masaje facial anti-edad:</b> Realizamos técnicas específicas para tonificar músculos y mejorar la circulación.</span>
+                        </li>
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">5</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-spa"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Mascarilla rejuvenecedora:</b> Aplicamos una mascarilla con ingredientes que estimulan la producción de colágeno.</span>
+                        </li>
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">6</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-droplet"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Hidratación y protección:</b> Sellamos con cremas anti-edad y protector solar para mantener los resultados.</span>
+                        </li>
+                    </ol>
+                    <div class="tratamiento-moderno-frecuencia">
+                        <i class="fa-regular fa-calendar"></i> Se recomienda cada 4-5 semanas
+                    </div>
+                    <div class="tratamiento-moderno-frecuencia">
+                        <i class="fa-regular fa-calendar"></i> En este tratamiento se utiliza aparatologia
+                    </div>
+                    <div class="tratamiento-moderno-sensacion">
+                        <b>¿Qué sentirás?</b> Tu piel se sentirá más firme, luminosa y rejuvenecida. El tratamiento es relajante y verás resultados progresivos. ¡Recupera la juventud de tu piel!
+                    </div>
+                </div>
+            </div>
+
+            <!-- Limpieza Facial Profunda con pasos detallados -->
+            <div class="tratamiento-moderno">
+                <div class="tratamiento-moderno-imagen">
+                    <img src="Imagenes/limpiezaProfunda.webp" alt="Limpieza Facial Profunda">
+                </div>
+                <div class="tratamiento-moderno-info">
+                    <div class="tratamiento-moderno-titulo">Limpieza Facial Profunda</div>
+                    <div class="tratamiento-moderno-meta">
+                        <span><i class="fa-regular fa-clock"></i> 90 min</span>
+                        <span><i class="fas fa-dollar-sign"></i> $20.000</span>
+                        <span class="badge-nuevo-detallado">Nuevo</span>
+                    </div>
+                    <ol class="tratamiento-pasos">
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">1</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-magnifying-glass"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Evaluación profunda:</b> Examinamos tu piel para identificar impurezas, poros dilatados y puntos negros.</span>
+                        </li>
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">2</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-seedling"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Exfoliación profunda:</b> Utilizamos un exfoliante más intenso para eliminar células muertas y suciedad acumulada.</span>
+                        </li>
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">3</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-steam"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Vaporización:</b> Aplicamos vapor para abrir los poros y facilitar la extracción de impurezas profundas.</span>
+                        </li>
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">4</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Extracción manual:</b> Realizamos una extracción completa y cuidadosa de puntos negros y comedones.</span>
+                        </li>
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">5</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-spa"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Mascarilla purificante:</b> Aplicamos una mascarilla con arcilla o carbón para absorber impurezas restantes.</span>
+                        </li>
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">6</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-droplet"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Tonificación y protección:</b> Cerramos los poros con tónico y aplicamos crema hidratante con protector solar.</span>
+                        </li>
+                    </ol>
+                    <div class="tratamiento-moderno-frecuencia">
+                        <i class="fa-regular fa-calendar"></i> Se recomienda cada 4-5 semanas
+                    </div>
+                    <div class="tratamiento-moderno-frecuencia">
+                        <i class="fa-regular fa-calendar"></i> En este tratamiento se utiliza aparatologia
+                    </div>
+                    <div class="tratamiento-moderno-sensacion">
+                        <b>¿Qué sentirás?</b> Tu piel se sentirá completamente limpia y renovada. El proceso es más intenso que una limpieza regular pero muy efectivo. ¡Piel purificada y radiante!
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tratamiento del Acné con pasos detallados -->
+            <div class="tratamiento-moderno">
+                <div class="tratamiento-moderno-imagen">
+                    <img src="Imagenes/tratamientoAcne.jpg" alt="Tratamiento del Acné">
+                </div>
+                <div class="tratamiento-moderno-info">
+                    <div class="tratamiento-moderno-titulo">Tratamiento del Acné</div>
+                    <div class="tratamiento-moderno-meta">
+                        <span><i class="fa-regular fa-clock"></i> 80 min</span>
+                        <span><i class="fas fa-dollar-sign"></i> $18.000</span>
+                        <span class="badge-especializado-detallado">Especializado</span>
+                    </div>
+                    <ol class="tratamiento-pasos">
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">1</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-magnifying-glass"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Evaluación del acné:</b> Analizamos el tipo y severidad del acné para determinar el tratamiento más efectivo.</span>
+                        </li>
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">2</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-soap"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Limpieza suave:</b> Utilizamos productos específicos para piel acneica que no irriten ni empeoren la condición.</span>
+                        </li>
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">3</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-leaf"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Aplicación de productos anti-acné:</b> Utilizamos ingredientes como ácido salicílico, peróxido de benzoilo o azufre.</span>
+                        </li>
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">4</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Extracción cuidadosa:</b> Realizamos extracción solo de lesiones maduras para evitar cicatrices.</span>
+                        </li>
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">5</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-spa"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Mascarilla calmante:</b> Aplicamos una mascarilla con ingredientes antiinflamatorios para calmar la piel.</span>
+                        </li>
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">6</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-droplet"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Hidratación específica:</b> Aplicamos crema hidratante no comedogénica y protector solar oil-free.</span>
+                        </li>
+                    </ol>
+                    <div class="tratamiento-moderno-frecuencia">
+                        <i class="fa-regular fa-calendar"></i> Se recomienda cada 2-3 semanas
+                    </div>
+                    <div class="tratamiento-moderno-frecuencia">
+                        <i class="fa-regular fa-calendar"></i> En este tratamiento se utiliza aparatologia
+                    </div>
+                    <div class="tratamiento-moderno-sensacion">
+                        <b>¿Qué sentirás?</b> Tu piel se sentirá más limpia y controlada. El tratamiento es suave pero efectivo para combatir el acné. ¡Piel más clara y saludable!
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Separador entre secciones principales -->
+        <div class="section-divider"></div>
+
+        <section id="tratamientos-corporales">
+            <h2>Tratamientos Corporales Detallados</h2>
+            
+           
+            <!-- Masaje de Relajación con pasos detallados -->
+            <div class="tratamiento-moderno">
+                <div class="tratamiento-moderno-imagen">
+                    <img src="Imagenes/masajeRelajacion.webp" alt="Masaje de Relajación">
+                </div>
+                <div class="tratamiento-moderno-info">
+                    <div class="tratamiento-moderno-titulo">Masaje de Relajación</div>
+                    <div class="tratamiento-moderno-meta">
+                        <span><i class="fa-regular fa-clock"></i> 60 min</span>
+                        <span><i class="fas fa-dollar-sign"></i> $20.000</span>
+                        <span class="badge-nuevo-detallado">Nuevo</span>
+                    </div>
+                    <ol class="tratamiento-pasos">
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">1</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-music"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Ambiente relajante:</b> Creamos un espacio tranquilo con música suave y aromas relajantes para tu bienestar.</span>
+                        </li>
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">2</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-leaf"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Aplicación de aceites:</b> Utilizamos aceites esenciales naturales para hidratar y aromatizar el masaje.</span>
+                        </li>
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">3</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-hands"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Masaje terapéutico:</b> Aplicamos técnicas de masaje suave y relajante en todo el cuerpo.</span>
+                        </li>
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">4</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-heart"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Alivio de tensiones:</b> Nos enfocamos en áreas específicas donde acumulas más estrés y tensión.</span>
+                        </li>
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">5</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-spa"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Relajación final:</b> Te permitimos descansar y absorber todos los beneficios del tratamiento.</span>
+                        </li>
+                    </ol>
+                    <div class="tratamiento-moderno-frecuencia">
+                        <i class="fa-regular fa-calendar"></i> Se puede realizar semanalmente o según necesidad para relajación
+                    </div>
+                    <div class="tratamiento-moderno-sensacion">
+                        <b>¿Qué sentirás?</b> Sensación de profunda relajación y alivio de tensiones musculares. El masaje es suave y terapéutico. ¡Renovación total del cuerpo y mente!
+                    </div>
+                </div>
+            </div>
+
+            <!-- Masaje con Piedras Calientes con pasos detallados -->
+            <div class="tratamiento-moderno">
+                <div class="tratamiento-moderno-imagen">
+                    <img src="Imagenes/masajePiedras.jpg" alt="Masaje con Piedras Calientes">
+                </div>
+                <div class="tratamiento-moderno-info">
+                    <div class="tratamiento-moderno-titulo">Masaje de Relajación con Piedras Calientes</div>
+                    <div class="tratamiento-moderno-meta">
+                        <span><i class="fa-regular fa-clock"></i> 60 min</span>
+                        <span><i class="fas fa-dollar-sign"></i> $25.000</span>
+                        <span class="badge-premium-detallado">Premium</span>
+                    </div>
+                    <ol class="tratamiento-pasos">
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">1</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-music"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Ambiente relajante:</b> Creamos un espacio tranquilo con música suave y aromas relajantes para tu bienestar.</span>
+                        </li>
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">2</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-fire"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Preparación de piedras:</b> Calentamos piedras volcánicas a la temperatura ideal para terapia térmica.</span>
+                        </li>
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">3</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-leaf"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Aplicación de aceites:</b> Utilizamos aceites esenciales naturales para hidratar y aromatizar el masaje.</span>
+                        </li>
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">4</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-hands"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Masaje terapéutico:</b> Combinamos técnicas de masaje tradicional con la terapia de piedras calientes.</span>
+                        </li>
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">5</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-spa"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Relajación final:</b> Te permitimos descansar y absorber todos los beneficios del tratamiento.</span>
+                        </li>
+                    </ol>
+                    <div class="tratamiento-moderno-frecuencia">
+                        <i class="fa-regular fa-calendar"></i> Se puede realizar semanalmente o según necesidad para relajación
+                    </div>
+                    <div class="tratamiento-moderno-sensacion">
+                        <b>¿Qué sentirás?</b> Calor relajante que penetra en tus músculos, aliviando tensiones y proporcionando una profunda sensación de paz. ¡Renovación total!
+                    </div>
+                </div>
+            </div>
+
+             <!-- Ondas Rusas con pasos detallados -->
+             <div class="tratamiento-moderno">
+                <div class="tratamiento-moderno-imagen">
+                    <img src="Imagenes/ondas-rusas.jpg" alt="Ondas Rusas">
+                </div>
+                <div class="tratamiento-moderno-info">
+                    <div class="tratamiento-moderno-titulo">Ondas Rusas</div>
+                    <div class="tratamiento-moderno-meta">
+                        <span><i class="fa-regular fa-clock"></i> 45 min</span>
+                        <span><i class="fas fa-dollar-sign"></i> $90.000</span>
+                        <span class="badge-popular-detallado">Popular</span>
+                    </div>
+                    <ol class="tratamiento-pasos">
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">1</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-search"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Evaluación de zonas:</b> Analizamos las áreas específicas a tratar para personalizar el tratamiento según tus necesidades.</span>
+                        </li>
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">2</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-tint"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Aplicación de gel conductor:</b> Preparamos la piel con un gel especial que optimiza la conducción de la energía.</span>
+                        </li>
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">3</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-bolt"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Tratamiento con electrodos:</b> Aplicamos electrodos estratégicamente para estimular los músculos de forma controlada.</span>
+                        </li>
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">4</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-dumbbell"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Estimulación muscular:</b> Los músculos se contraen y relajan de forma rítmica, simulando ejercicio intenso.</span>
+                        </li>
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">5</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-hands"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Masaje:</b> Realizamos un masaje linfatico para mejorar la circulación y eliminar toxinas.</span>
+                        </li>
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">6</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-clipboard-list"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Recomendaciones post-tratamiento:</b> Se recomienda un minimo de 2 litos de agua diarios, alimentación equilibrada y hacer deporte de mnera recurrente.</span>
+                        </li>
+                    </ol>
+                    <div class="tratamiento-moderno-frecuencia">
+                        <i class="fa-regular fa-calendar"></i> Se recomienda 2-3 sesiones por semana durante 6-8 semanas (10 sesiones)
+                    </div>
+                    <div class="tratamiento-moderno-sensacion">
+                        <b>¿Qué sentirás?</b> Sensación de contracción muscular controlada, como un ejercicio intenso pero sin esfuerzo. ¡Tonifica y moldea tu figura de forma efectiva!
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lipolaser con pasos detallados -->
+            <div class="tratamiento-moderno">
+                <div class="tratamiento-moderno-imagen">
+                    <img src="Imagenes/lipolaser.jpg" alt="Lipolaser">
+                </div>
+                <div class="tratamiento-moderno-info">
+                    <div class="tratamiento-moderno-titulo">Lipolaser</div>
+                    <div class="tratamiento-moderno-meta">
+                        <span><i class="fa-regular fa-clock"></i> 60 min</span>
+                        <span><i class="fas fa-dollar-sign"></i> $130.000</span>
+                        <span class="badge-premium-detallado">Premium</span>
+                    </div>
+                    <ol class="tratamiento-pasos">
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">1</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-search"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Evaluación de zonas objetivo:</b> Identificamos las áreas específicas donde quieres reducir la grasa localizada.</span>
+                        </li>
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">2</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-lightbulb"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Tratamiento con tecnología láser:</b> Aplicamos el láser de baja intensidad que rompe las células grasas.</span>
+                        </li>
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">3</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-hands"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Masaje:</b> Realizamos un masaje linfatico para mejorar la circulación y eliminar toxinas.</span>
+                        </li>
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">4</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-clipboard-list"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Recomendaciones post-tratamiento:</b> Se recomienda un minimo de 2 litos de agua diarios, alimentación equilibrada y hacer deporte de mnera recurrente.</span>
+                        </li>
+                    </ol>
+                    <div class="tratamiento-moderno-frecuencia">
+                        <i class="fa-regular fa-calendar"></i> Se recomienda 2-3 sesiones por semana durante 6-8 semanas (10 sesiones)
+                    </div>
+                    <div class="tratamiento-moderno-sensacion">
+                        <b>¿Qué sentirás?</b> Sensación de calor suave y relajante. El tratamiento es completamente indoloro y verás resultados desde la primera sesión. ¡Moldea tu figura sin esfuerzo!
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Radiofrecuencia con pasos detallados -->
+            <div class="tratamiento-moderno">
+                <div class="tratamiento-moderno-imagen">
+                    <img src="Imagenes/radiofrecuencia.jpg" alt="Radiofrecuencia">
+                </div>
+                <div class="tratamiento-moderno-info">
+                    <div class="tratamiento-moderno-titulo">Radiofrecuencia</div>
+                    <div class="tratamiento-moderno-meta">
+                        <span><i class="fa-regular fa-clock"></i> 50 min</span>
+                        <span><i class="fas fa-dollar-sign"></i> $110.000</span>
+                        <span class="badge-especializado-detallado">Especializado</span>
+                    </div>
+                    <ol class="tratamiento-pasos">
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">1</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-search"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Evaluación de la piel:</b> Analizamos el estado de tu piel para determinar la intensidad óptima del tratamiento.</span>
+                        </li>
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">2</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-tint"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Aplicación de gel conductor:</b> Preparamos la piel con gel especial para una conducción eficiente de la energía.</span>
+                        </li>
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">3</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-wave-square"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Tratamiento con ondas de radiofrecuencia:</b> Aplicamos ondas que calientan las capas profundas de la piel.</span>
+                        </li>
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">4</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-hands"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Masaje:</b> Realizamos un masaje linfatico para mejorar la circulación y eliminar toxinas.</span>
+                        </li>
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">5</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-droplet"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Hidratación post-tratamiento:</b> Aplicamos crema hidratante para nutrir y proteger tu piel renovada.</span>
+                        </li>
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">6</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-clipboard-list"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Recomendaciones post-tratamiento:</b> Se recomienda un minimo de 2 litos de agua diarios, alimentación equilibrada y hacer deporte de mnera recurrente.</span>
+                        </li>
+                    </ol>
+                    <div class="tratamiento-moderno-frecuencia">
+                        <i class="fa-regular fa-calendar"></i> Se recomienda 2-3 sesiones por semana durante 6-8 semanas (10 sesiones)
+                    </div>
+                    <div class="tratamiento-moderno-sensacion">
+                        <b>¿Qué sentirás?</b> Calor profundo y relajante que estimula la producción de colágeno. Tu piel se sentirá más firme y tonificada. ¡Rejuvenecimiento natural!
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cavitación con pasos detallados -->
+            <div class="tratamiento-moderno">
+                <div class="tratamiento-moderno-imagen">
+                    <img src="Imagenes/cavitacion.jpg.webp" alt="Cavitación">
+                </div>
+                <div class="tratamiento-moderno-info">
+                    <div class="tratamiento-moderno-titulo">Cavitación</div>
+                    <div class="tratamiento-moderno-meta">
+                        <span><i class="fa-regular fa-clock"></i> 50 min</span>
+                        <span><i class="fas fa-dollar-sign"></i> $110.000</span>
+                        <span class="badge-especializado-detallado">Especializado</span>
+                    </div>
+                    <ol class="tratamiento-pasos">
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">1</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-search"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Evaluación de zonas objetivo:</b> Identificamos las áreas específicas donde quieres eliminar grasa localizada.</span>
+                        </li>
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">2</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-tint"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Aplicación de gel conductor:</b> Preparamos la piel con gel especial para optimizar la penetración del ultrasonido.</span>
+                        </li>
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">3</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-wave-square"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Tratamiento con ultrasonido:</b> Aplicamos ondas de ultrasonido que rompen las células grasas de forma selectiva.</span>
+                        </li>
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">4</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-hands"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Masaje:</b> Realizamos un masaje linfatico para mejorar la circulación y eliminar toxinas.</span>
+                        </li>
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">5</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-clipboard-list"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Recomendaciones de hidratación:</b> Te damos consejos para mantenerte hidratada y maximizar los resultados.</span>
+                        </li>
+                        <li class="tratamiento-paso">
+                            <span class="tratamiento-paso-num">6</span>
+                            <span class="tratamiento-paso-icono"><i class="fa-solid fa-clipboard-list"></i></span>
+                            <span class="tratamiento-paso-texto"><b>Recomendaciones post-tratamiento:</b> Se recomienda un minimo de 2 litos de agua diarios, alimentación equilibrada y hacer deporte de mnera recurrente.</span>
+                        </li>
+                    </ol>
+                    <div class="tratamiento-moderno-frecuencia">
+                        <i class="fa-regular fa-calendar"></i> Se recomienda 2-3 sesiones por semana durante 6-8 semanas (10 sesiones)
+                    </div>
+                    <div class="tratamiento-moderno-sensacion">
+                        <b>¿Qué sentirás?</b> Vibración suave y relajante. El tratamiento es completamente indoloro y verás resultados progresivos. ¡Elimina grasa localizada de forma natural!
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Separador entre secciones principales -->
+        <div class="section-divider"></div>
+
+        <section id="cuidados-post">
+            <h2>Cuidados Post-Tratamiento</h2>
+            
+            <article class="cuidados-articulo">
+                <h3>Cuidados Generales</h3>
+                <div class="cuidados-grid cuidados-generales-centro">
+                    <div class="cuidado-item">
+                        <i class="fas fa-tint"></i>
+                        <h4>Hidratación</h4>
+                        <p>Mantén tu piel hidratada bebiendo al menos 2 litros de agua al día.</p>
+                    </div>
+                    <div class="cuidado-item">
+                        <i class="fas fa-sun"></i>
+                        <h4>Protección Solar</h4>
+                        <p>Usa protector solar SPF 30+ todos los días, incluso en interiores.</p>
+                    </div>
+                    <div class="cuidado-item">
+                        <i class="fas fa-bed"></i>
+                        <h4>Descanso</h4>
+                        <p>Duerme al menos 7-8 horas para que tu piel se regenere correctamente.</p>
+                    </div>
+                    <div class="cuidado-item">
+                        <i class="fas fa-apple-alt"></i>
+                        <h4>Alimentación</h4>
+                        <p>Consume frutas y verduras ricas en antioxidantes para mejorar los resultados.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cuidados-articulo">
+                <h3>Recomendaciones Específicas</h3>
+                <div class="recomendaciones">
+                    <div class="recomendacion">
+                        <h4>Tratamientos Faciales</h4>
+                        <ul>
+                            <li>No maquillarse durante las primeras 24 horas</li>
+                            <li>Evitar exposición directa al sol</li>
+                            <li>Usar productos recomendados por la especialista</li>
+                            <li>No tocar ni rascar la piel tratada</li>
+                        </ul>
+                    </div>
+                    <div class="recomendacion">
+                        <h4>Tratamientos Corporales</h4>
+                        <ul>
+                            <li>Beber mucha agua para eliminar toxinas</li>
+                            <li>Realizar ejercicio moderado</li>
+                            <li>Evitar comidas muy grasas</li>
+                            <li>Usar ropa cómoda que no comprima</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- Separador entre secciones principales -->
+    <div class="section-divider"></div>
+
+    <!-- Agregar mapa de Google Maps antes del footer -->
+    <div class="mapa-ubicacion" style="max-width:900px;margin:2rem auto 0 auto;">
+        <h3 style="text-align:center;color:#2a858f;">¿Dónde estamos?</h3>
+        <iframe src="https://www.google.com/maps?q=-36.16686111111111,-71.80672222222222&output=embed" width="100%" height="300" style="border:0;border-radius:18px;box-shadow:0 2px 12px rgba(42,133,143,0.10);margin-top:1rem;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="section-divider"></div>
+
+    <!-- Footer más informativo -->
+    <footer>
+        <div style="text-align:center;">
+            <img src="Imagenes/bombayBB.jpg" alt="Logo Estudio Bombay" class="footer-logo-giro" width="90" height="90" style="margin-bottom:1rem;">
+        </div>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h6>Horario de atención</h6>
+                <div class="footer-horario">
+                    <i class="fa-regular fa-clock"></i>
+                    Lunes a viernes de 10:00 a 20:00 Hrs.
+                </div>
+            </div>
+            <div class="footer-section">
+                <h6>Contacto</h6>
+                <div class="contactos-container">
+                    <a href="https://wa.me/+56995127863" target="_blank" class="btn-wsp">
+                        <i class="fab fa-whatsapp"></i> Agenda tu cita por WhatsApp
+                    </a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=salonjavierasalas@gmail.com" target="_blank" class="btn-gmail">
+                        <i class="far fa-envelope"></i> Contáctanos por Gmail
+                    </a>
+                    <a href="https://www.instagram.com/estudiobombayy/" target="_blank" class="btn-ig">
+                        <i class="fab fa-instagram"></i> Síguenos en Instagram
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#tratamientos-faciales">Faciales</a>
+            <a href="#tratamientos-corporales">Corporales</a>
+            <a href="#cuidados-post">Cuidados</a>
+        </div>
+        <div class="footer-info">
+            La información actualizada se encuentra en instagram
+        </div>
+        <div class="footer-legal">
+            © 2025 Estudio Bombay. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/+56995127863" class="btn-wsp-float" target="_blank" title="Agenda tu cita por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <!-- Botón flotante volver arriba -->
+    <button class="btn-top-float" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver arriba">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Menú hamburguesa para móviles
+            const btnHamburguesa = document.getElementById('menu-hamburguesa');
+            const offcanvasMenu = document.getElementById('offcanvas-menu');
+            const closeOffcanvas = document.getElementById('close-offcanvas');
+            
+            btnHamburguesa.addEventListener('click', function() {
+                offcanvasMenu.classList.add('activo');
+            });
+            
+            closeOffcanvas.addEventListener('click', function() {
+                offcanvasMenu.classList.remove('activo');
+            });
+            
+            // Cerrar menú al hacer clic en un enlace
+            offcanvasMenu.querySelectorAll('a').forEach(function(link) {
+                link.addEventListener('click', function() {
+                    offcanvasMenu.classList.remove('activo');
+                });
+            });
+        });
+    </script>
+
+    <!-- Animación de entrada para cartas y bloques principales -->
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            const animables = document.querySelectorAll('.tratamiento-moderno, .cuidados-articulo, .footer-content');
+            animables.forEach(el => {
+                el.classList.add('fade-in-init');
+                setTimeout(() => el.classList.add('fade-in-show'), 200);
+            });
+        });
+    </script>
+</body>
+</html> 

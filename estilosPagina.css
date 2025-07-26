@@ -1646,12 +1646,37 @@ section h1:hover::after, section h2:hover::after, section h3:hover::after {
 
 /* Separadores sutiles entre secciones */
 .section-divider {
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg, #e0f7fa 0%, #2a858f22 100%);
-  border: none;
-  margin: 2.5rem 0 2rem 0;
-  border-radius: 2px;
+    width: 100%;
+    height: 32px;
+    margin: 2.5rem 0 2.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: none;
+}
+.section-divider::before, .section-divider::after {
+    content: "";
+    flex: 1;
+    height: 4px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #2a858f 0%, #aee6e9 100%);
+    opacity: 0.5;
+}
+.section-divider::after {
+    background: linear-gradient(90deg, #aee6e9 0%, #2a858f 100%);
+}
+.section-divider-icon {
+    color: #2a858f;
+    font-size: 1.6em;
+    margin: 0 18px;
+    background: #fff;
+    border-radius: 50%;
+    padding: 4px 10px;
+    box-shadow: 0 2px 8px rgba(42,133,143,0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Sombras suaves y bordes redondeados en recuadros principales */
@@ -2518,5 +2543,923 @@ h3 {
   box-shadow: 0 8px 28px rgba(42,133,143,0.22);
   background: #1f6b73;
   color: #fff;
+}
+   
+/* ===== MEJORAS RESPONSIVAS GENERALES ===== */
+@media (max-width: 768px) {
+    /* Mejoras generales para móviles */
+    main {
+        padding: 0 5px;
+    }
+    
+    section {
+        padding: 1.5rem 1rem;
+        margin-bottom: 1.5rem;
+        border-radius: 12px;
+    }
+    
+    /* Mejoras para el navbar */
+    .navbar {
+        padding: 0.8rem 3%;
+        height: 70px;
+    }
+    
+    #logo {
+        width: 60px;
+        height: 60px;
+    }
+    
+    /* Mejoras para contenedores de ubicación */
+    .ubicacion-container {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+    
+    .ubicacion-texto {
+        order: 1;
+        text-align: center;
+    }
+    
+    .ubicacion-mapa {
+        order: 2;
+        width: 100%;
+        min-height: 300px;
+    }
+    
+    .ubicacion-mapa iframe {
+        height: 300px !important;
+        border-radius: 12px;
+    }
+    
+    /* Mejoras para contenedores de contacto */
+    .contactos-container {
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+    
+    /* Mejoras para footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+    
+    .footer-horario {
+        font-size: 1.1rem;
+        padding: 0.6rem 1rem;
+        max-width: 100%;
+    }
+    
+    .footer-links {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .footer-links a {
+        font-size: 0.9rem;
+    }
+    
+    /* Mejoras para carrusel */
+    .carrusel-container {
+        padding: 0 20px;
+        margin-bottom: 2rem;
+    }
+    
+    .flecha {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+    
+    /* Mejoras para cartas */
+    .carta {
+        width: 280px;
+        height: 380px;
+    }
+    
+    /* Mejoras para tratamientos modernos */
+    .tratamiento-moderno {
+        margin: 1.5rem 0;
+        border-radius: 20px;
+    }
+    
+    .tratamiento-moderno-info {
+        padding: 1rem 0.8rem;
+    }
+    
+    .tratamiento-moderno-titulo {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    
+    .tratamiento-moderno-meta {
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+    
+    .tratamiento-pasos {
+        gap: 0.5rem;
+    }
+    
+    .tratamiento-paso {
+        min-width: 100px;
+        max-width: 150px;
+        font-size: 0.85rem;
+        padding: 0.5rem 0.4rem;
+    }
+    
+    /* Mejoras para cuidados */
+    .cuidados-articulo {
+        padding: 1.5rem 1rem;
+        margin: 1.5rem 0;
+    }
+    
+    .cuidados-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .recomendaciones {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    /* Mejoras para banner principal */
+    .banner-principal {
+        padding: 2rem 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .frase-inspiradora {
+        font-size: 1.5rem;
+    }
+    
+    .btn-banner-reserva {
+        font-size: 1rem;
+        padding: 0.8rem 2rem;
+    }
+    
+    /* Mejoras para beneficios */
+    .beneficios {
+        padding: 2rem 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .beneficios-lista {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .beneficio-item {
+        min-width: unset;
+        font-size: 1rem;
+    }
+    
+    /* Mejoras para FAQ */
+    .faq {
+        padding: 2rem 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .faq-item h4 {
+        font-size: 1.1rem;
+    }
+    
+    .faq-item p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Mejoras para pantallas muy pequeñas */
+    main {
+        padding: 0 3px;
+    }
+    
+    section {
+        padding: 1rem 0.8rem;
+        border-radius: 10px;
+    }
+    
+    /* Mejoras para navbar */
+    .navbar {
+        padding: 0.6rem 2%;
+        height: 65px;
+    }
+    
+    #logo {
+        width: 55px;
+        height: 55px;
+    }
+    
+    /* Mejoras para ubicación */
+    .ubicacion-container {
+        padding: 0.8rem;
+        gap: 1rem;
+    }
+    
+    .ubicacion-mapa iframe {
+        height: 250px !important;
+    }
+    
+    /* Mejoras para contacto */
+    .contactos-container {
+        padding: 0 0.8rem;
+    }
+    
+    .btn-wsp, .btn-gmail, .btn-ig {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.95rem;
+    }
+    
+    /* Mejoras para cartas */
+    .carta {
+        width: 260px;
+        height: 360px;
+    }
+    
+    /* Mejoras para tratamientos modernos */
+    .tratamiento-moderno-info {
+        padding: 0.8rem 0.6rem;
+    }
+    
+    .tratamiento-moderno-titulo {
+        font-size: 1.2rem;
+    }
+    
+    .tratamiento-paso {
+        min-width: 90px;
+        max-width: 130px;
+        font-size: 0.8rem;
+        padding: 0.4rem 0.3rem;
+    }
+    
+    .tratamiento-paso-num {
+        width: 1rem;
+        height: 1rem;
+        font-size: 0.75rem;
+    }
+    
+    /* Mejoras para banner */
+    .banner-principal {
+        padding: 1.5rem 0.8rem;
+    }
+    
+    .frase-inspiradora {
+        font-size: 1.3rem;
+    }
+    
+    .btn-banner-reserva {
+        font-size: 0.95rem;
+        padding: 0.7rem 1.8rem;
+    }
+    
+    /* Mejoras para botones flotantes */
+    .btn-wsp-float {
+        right: 12px;
+        bottom: 12px;
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+    }
+    
+    .btn-top-float {
+        left: 12px;
+        bottom: 12px;
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+}
+
+/* ===== MEJORAS ESPECÍFICAS PARA EL MAPA ===== */
+.mapa-ubicacion {
+    max-width: 900px;
+    margin: 2rem auto 0 auto;
+    padding: 0 1rem;
+}
+
+.mapa-ubicacion h3 {
+    text-align: center;
+    color: #2a858f;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.mapa-ubicacion iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(42,133,143,0.10);
+    margin-top: 1rem;
+    display: block;
+}
+
+.mapa-ubicacion .btn-mapa {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #2a858f;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(42,133,143,0.10);
+    transition: background 0.2s, transform 0.2s;
+    margin-top: 1rem;
+}
+
+.mapa-ubicacion .btn-mapa:hover {
+    background: #1f6b73;
+    transform: translateY(-2px);
+}
+
+.mapa-ubicacion .btn-mapa i {
+    margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+    .mapa-ubicacion {
+        padding: 0 0.8rem;
+        margin: 1.5rem auto 0 auto;
+    }
+    
+    .mapa-ubicacion h3 {
+        font-size: 1.3rem;
+    }
+    
+    .mapa-ubicacion iframe {
+        height: 250px;
+        border-radius: 12px;
+    }
+    
+    .mapa-ubicacion .btn-mapa {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .mapa-ubicacion {
+        padding: 0 0.5rem;
+        margin: 1rem auto 0 auto;
+    }
+    
+    .mapa-ubicacion h3 {
+        font-size: 1.2rem;
+    }
+    
+    .mapa-ubicacion iframe {
+        height: 200px;
+        border-radius: 10px;
+    }
+    
+    .mapa-ubicacion .btn-mapa {
+        padding: 7px 14px;
+        font-size: 0.85rem;
+    }
+}
+
+/* ===== MEJORAS PARA CONTENEDORES ESPECÍFICOS ===== */
+.ubicacion-container {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+
+.ubicacion-texto {
+    flex: 1;
+    padding: 1rem;
+}
+
+.ubicacion-mapa {
+    flex: 1;
+    min-height: 450px;
+}
+
+.contactos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    margin: 2rem 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+}
+
+/* ===== MEJORAS PARA CARRUSEL RESPONSIVO ===== */
+@media (max-width: 768px) {
+    .carrusel-container {
+        padding: 0 30px;
+        margin-bottom: 2rem;
+    }
+    
+    .carrusel .carta {
+        width: 280px;
+        height: 380px;
+    }
+    
+    .flecha {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+    
+    .flecha-izquierda {
+        left: 5px;
+    }
+    
+    .flecha-derecha {
+        right: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carrusel-container {
+        padding: 0 25px;
+    }
+    
+    .carrusel .carta {
+        width: 260px;
+        height: 360px;
+    }
+    
+    .flecha {
+        width: 30px;
+        height: 30px;
+        font-size: 0.9rem;
+    }
+}
+
+/* ===== MEJORAS PARA BOTONES DE CONTACTO RESPONSIVOS ===== */
+@media (max-width: 700px) {
+    .contactos-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+    
+    .btn-wsp, .btn-gmail, .btn-ig {
+        width: 100%;
+        min-width: unset;
+        justify-content: center;
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn-wsp, .btn-gmail, .btn-ig {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.95rem;
+    }
+    
+    .btn-wsp i, .btn-gmail i, .btn-ig i {
+        font-size: 1.2rem;
+    }
+}
+
+/* ===== MEJORAS PARA FOOTER RESPONSIVO ===== */
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+    
+    .footer-section {
+        text-align: center;
+    }
+    
+    .footer-horario {
+        font-size: 1.1rem;
+        padding: 0.6rem 1rem;
+        max-width: 100%;
+    }
+    
+    .footer-links {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 1rem;
+    }
+    
+    .footer-links a {
+        font-size: 0.9rem;
+    }
+    
+    .footer-info {
+        font-size: 1.1rem;
+        padding: 0.8rem 0.5rem;
+        margin: 1rem 0.5rem 0 0.5rem;
+    }
+    
+    .footer-legal {
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-horario {
+        font-size: 1rem;
+        padding: 0.5rem 0.8rem;
+    }
+    
+    .footer-info {
+        font-size: 1rem;
+        padding: 0.7rem 0.4rem;
+    }
+    
+    .footer-legal {
+        font-size: 0.85rem;
+    }
+}
+
+/* ===== MEJORAS ADICIONALES PARA RESPONSIVIDAD ===== */
+@media (max-width: 768px) {
+    /* Mejoras para botones de contacto */
+    .btn-wsp, .btn-gmail, .btn-ig {
+        width: 100%;
+        min-width: unset;
+        justify-content: center;
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+        height: auto;
+    }
+    
+    /* Mejoras para el menú hamburguesa */
+    .menu-hamburguesa {
+        display: flex !important;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        z-index: 10001;
+        background: #2a858f;
+        color: #fff;
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+        border: none;
+        font-size: 1.2rem;
+    }
+    
+    /* Mejoras para el offcanvas menu */
+    .offcanvas-menu {
+        width: 80vw;
+        max-width: 300px;
+    }
+    
+    .offcanvas-list li a {
+        font-size: 1.1rem;
+        padding: 0.8rem 0;
+    }
+    
+    /* Mejoras para secciones de tratamientos */
+    .tratamiento-moderno {
+        flex-direction: column;
+        min-height: unset;
+        max-width: 100%;
+        margin-bottom: 1.2rem;
+    }
+    
+    .tratamiento-moderno-titulo {
+        order: 0;
+        margin-bottom: 0.5rem;
+        padding: 0 1rem;
+        font-size: 1.15rem;
+        text-align: center;
+    }
+    
+    .tratamiento-moderno-imagen {
+        order: 1;
+        width: 100%;
+        max-height: 220px;
+        min-height: 140px;
+        justify-content: center;
+        background: #e0f7fa;
+    }
+    
+    .tratamiento-moderno-imagen img {
+        width: 100%;
+        min-height: 180px;
+        max-height: 220px;
+        border-radius: 0 0 100vw 100vw / 0 0 50% 50%;
+    }
+    
+    .tratamiento-moderno-info {
+        order: 2;
+        padding: 1.2rem 0.7rem 1.2rem 0.7rem;
+    }
+    
+    .tratamiento-moderno-meta {
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+    }
+    
+    .tratamiento-pasos {
+        gap: 0.5rem;
+        justify-content: center;
+    }
+    
+    .tratamiento-paso {
+        min-width: 100px;
+        max-width: 150px;
+        font-size: 0.85rem;
+        padding: 0.5rem 0.4rem;
+    }
+    
+    /* Mejoras para badges */
+    .badge-popular-detallado, .badge-premium-detallado, .badge-nuevo-detallado, .badge-especializado-detallado {
+        font-size: 0.7rem;
+        padding: 3px 8px;
+        margin-left: 8px;
+    }
+    
+    /* Mejoras para el botón de reserva principal */
+    .btn-reserva-principal {
+        padding: 15px 25px;
+        font-size: 1rem;
+        gap: 12px;
+        max-width: 350px;
+    }
+    
+    .btn-reserva-principal i {
+        font-size: 1.5rem;
+    }
+    
+    .reserva-titulo {
+        font-size: 1.1rem;
+    }
+    
+    .reserva-subtitulo {
+        font-size: 0.8rem;
+    }
+    
+    /* Mejoras para el footer */
+    .footer-logo-giro {
+        width: 100px;
+        height: 100px;
+    }
+    
+    /* Mejoras para el banner principal */
+    .banner-principal {
+        padding: 2rem 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .frase-inspiradora {
+        font-size: 1.5rem;
+        line-height: 1.3;
+    }
+    
+    .btn-banner-reserva {
+        font-size: 1rem;
+        padding: 0.8rem 2rem;
+    }
+    
+    /* Mejoras para beneficios */
+    .beneficios-lista {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .beneficio-item {
+        min-width: unset;
+        font-size: 1rem;
+    }
+    
+    .beneficio-item i {
+        font-size: 2rem;
+    }
+    
+    /* Mejoras para FAQ */
+    .faq-item h4 {
+        font-size: 1.1rem;
+    }
+    
+    .faq-item p {
+        font-size: 0.95rem;
+    }
+    
+    .faq-link-mas-info {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Mejoras para pantallas muy pequeñas */
+    .menu-hamburguesa {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+        top: 12px;
+        right: 12px;
+    }
+    
+    .offcanvas-menu {
+        width: 85vw;
+        max-width: 280px;
+    }
+    
+    .offcanvas-list li a {
+        font-size: 1rem;
+        padding: 0.7rem 0;
+    }
+    
+    /* Mejoras para tratamientos */
+    .tratamiento-moderno-info {
+        padding: 0.8rem 0.6rem;
+    }
+    
+    .tratamiento-moderno-titulo {
+        font-size: 1.1rem;
+    }
+    
+    .tratamiento-paso {
+        min-width: 90px;
+        max-width: 130px;
+        font-size: 0.8rem;
+        padding: 0.4rem 0.3rem;
+    }
+    
+    .tratamiento-paso-num {
+        width: 1rem;
+        height: 1rem;
+        font-size: 0.75rem;
+    }
+    
+    /* Mejoras para botón de reserva */
+    .btn-reserva-principal {
+        padding: 12px 20px;
+        font-size: 0.9rem;
+        gap: 10px;
+        max-width: 320px;
+    }
+    
+    .reserva-texto {
+        align-items: center;
+        text-align: center;
+    }
+    
+    /* Mejoras para banner */
+    .frase-inspiradora {
+        font-size: 1.3rem;
+    }
+    
+    .btn-banner-reserva {
+        font-size: 0.95rem;
+        padding: 0.7rem 1.8rem;
+    }
+    
+    /* Mejoras para footer */
+    .footer-logo-giro {
+        width: 90px;
+        height: 90px;
+    }
+    
+    .footer-horario {
+        font-size: 1rem;
+        padding: 0.5rem 0.8rem;
+    }
+    
+    .footer-info {
+        font-size: 1rem;
+        padding: 0.7rem 0.4rem;
+    }
+    
+    .footer-legal {
+        font-size: 0.85rem;
+    }
+}
+
+/* ===== MEJORAS PARA GESTOS TÁCTILES ===== */
+@media (max-width: 768px) {
+    /* Mejoras para interacciones táctiles */
+    .carta:active,
+    .tratamiento-moderno:active,
+    .btn:active,
+    .btn-wsp:active,
+    .btn-gmail:active,
+    .btn-ig:active {
+        transform: scale(0.98);
+        transition: transform 0.1s ease;
+    }
+    
+    /* Mejoras para scroll suave en móviles */
+    html {
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    /* Mejoras para el carrusel en móviles */
+    .carrusel {
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+    }
+    
+    .carrusel .carta {
+        scroll-snap-align: center;
+    }
+    
+    /* Mejoras para el menú offcanvas */
+    .offcanvas-menu {
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .offcanvas-list {
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+/* ===== MEJORAS PARA ACCESIBILIDAD EN MÓVILES ===== */
+@media (max-width: 768px) {
+    /* Mejoras para elementos interactivos */
+    .btn, .btn-wsp, .btn-gmail, .btn-ig, .flecha, .menu-hamburguesa {
+        min-height: 44px;
+        min-width: 44px;
+    }
+    
+    /* Mejoras para texto */
+    body {
+        font-size: 16px; /* Previene zoom en iOS */
+    }
+    
+    /* Mejoras para enlaces */
+    a {
+        -webkit-tap-highlight-color: rgba(42, 133, 143, 0.2);
+    }
+    
+    /* Mejoras para botones */
+    button {
+        -webkit-tap-highlight-color: rgba(42, 133, 143, 0.2);
+    }
+}
+
+/* ===== MEJORAS PARA ORIENTACIÓN LANDSCAPE EN MÓVILES ===== */
+@media (max-width: 768px) and (orientation: landscape) {
+    /* Mejoras para orientación horizontal */
+    .navbar {
+        height: 60px;
+        padding: 0.5rem 3%;
+    }
+    
+    #logo {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .menu-hamburguesa {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    
+    .banner-principal {
+        padding: 1.5rem 1rem;
+    }
+    
+    .frase-inspiradora {
+        font-size: 1.3rem;
+    }
+    
+    .btn-banner-reserva {
+        font-size: 0.9rem;
+        padding: 0.6rem 1.5rem;
+    }
+    
+    .tratamiento-moderno {
+        margin: 1rem 0;
+    }
+    
+    .tratamiento-moderno-info {
+        padding: 1rem 0.6rem;
+    }
+    
+    .footer-content {
+        gap: 1rem;
+    }
 }
    
